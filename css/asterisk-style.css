@@ -1,0 +1,41 @@
+     /* single input style */
+     .single-input{
+         margin-bottom: 50px;
+     }
+     .asterisk_input::after {
+        content:" *"; 
+        color: blue;
+        margin-left: -20px;
+        font-size: 1.25rem; 
+    }
+    /* form style */
+
+    input {
+        border: 2px solid;
+        border-radius: 4px;
+        font-size: 1rem;
+        margin: 0.25rem;
+        min-width: 125px;
+        padding: 0.5rem;
+        transition: background-color 0.5s ease-out;
+      }
+      input:optional {
+        border-color: gray;
+      }
+      input:required {
+        border-color: black;
+      }
+      input:invalid:focus {
+        border-color: red;
+      }
+      /* customed */
+      .asterisk::after{
+        content:" *"; 
+        color: red;
+      }
+      span{
+          display: none;
+      }
+      form:hover span{
+          display: inline-block;
+      }
